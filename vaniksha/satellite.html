@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satellite Monitoring - Vaniksha</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Vaniksha</div>
+        <div class="nav-content">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#community">Community</a></li>
+            </ul>
+            <div class="nav-right">
+                <div class="lang-selector">
+                    <!-- Same language selector as index.html -->
+                </div>
+                <button class="join-btn">Join Now</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Satellite Monitoring Hero Section -->
+    <section class="satellite-hero">
+        <div class="satellite-hero-content">
+            <h1>Satellite Monitoring</h1>
+            <p>Advanced real-time tracking of coastal changes using cutting-edge satellite technology</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="satellite-features">
+        <div class="container">
+            <div class="feature-grid">
+                <div class="feature-box">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Real-time Tracking</h3>
+                    <p>Monitor coastal changes as they happen with our advanced satellite system</p>
+                </div>
+                <div class="feature-box">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Erosion Mapping</h3>
+                    <p>Detailed mapping of erosion-prone areas with historical data analysis</p>
+                </div>
+                <div class="feature-box">
+                    <i class="fas fa-bell"></i>
+                    <h3>Early Warning System</h3>
+                    <p>Get alerts about potential coastal risks before they become critical</p>
+                </div>
+                <div class="feature-box">
+                    <i class="fas fa-database"></i>
+                    <h3>Data Analytics</h3>
+                    <p>Advanced analytics and AI-powered insights for better decision making</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Map Section -->
+    <section class="satellite-map">
+        <div class="container">
+            <h2>Live Monitoring Dashboard</h2>
+            <div class="map-container">
+                <div class="map-controls">
+                    <div class="map-legend">
+                        <h4>Shoreline Change (1990-2016)</h4>
+                        <div class="legend-item">
+                            <span class="color-box erosion"></span>
+                            <span>High Erosion</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="color-box stable"></span>
+                            <span>Stable Coast</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="color-box accretion"></span>
+                            <span>Accretion</span>
+                        </div>
+                    </div>
+                    <div class="map-zoom-controls">
+                        <button class="zoom-btn" id="zoomIn">+</button>
+                        <button class="zoom-btn" id="zoomOut">-</button>
+                    </div>
+                </div>
+                <div class="map-wrapper">
+                    <img src="https://www.researchgate.net/profile/Mick-Van-Der-Wegen/publication/326696903/figure/fig5/AS:654652150874113@1533105825763/Shoreline-change-map-along-Indian-coast-1990-2016.png" 
+                         alt="Shoreline change map along Indian coast (1990-2016)" 
+                         class="india-coastline-map">
+                    <div class="map-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
